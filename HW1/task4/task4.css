@@ -1,0 +1,109 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+#main {
+    display: flex;
+    flex-flow: row wrap;
+    height: 350px;
+    justify-content: space-between;
+}
+
+#main div {
+    padding: 0px;
+    margin: 0px;
+}
+
+.firstBlock {
+    width: 30%;
+    background: rgb(238, 50, 38);
+    height: 50px;
+}
+
+.secondBlock {
+    width: 67%;
+    background: rgb(255, 127, 38);
+    height: 50px;
+}
+
+.thirdBlock {
+    width: 100%;
+    background: rgb(35, 177, 77);
+    height: 150px;
+}
+
+#main div:nth-last-child(-n+3) {
+    width: 31%;
+    height: 100px;
+}
+
+.forthBlock {
+    background: rgb(185, 122, 87);
+}
+
+.fifthBlock {
+    background: rgb(63, 71, 204);
+}
+
+.sixthBlock {
+    background: rgb(163, 73, 163);
+}
+
+@media only screen and (max-width: 600px) {
+
+    .firstBlock,
+    .secondBlock,
+    .thirdBlock {
+        display: none;
+    }
+
+    div#main div:nth-last-child(-n+3) {
+        width: 100%;
+    }
+
+    div#main div.forthBlock {
+        background: rgb(35, 177, 77);
+        height: 50px;
+    }
+
+    div#main div.fifthBlock {
+        background: rgb(163, 73, 163);
+        height: 50px;
+    }
+
+    div#main div.sixthBlock {
+        background: rgb(238, 50, 38);
+        height: 200px;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .firstBlock {
+        background: rgb(255, 127, 38);
+        height: 50px;
+    }
+
+    .secondBlock {
+        width: 67%;
+        background: rgb(163, 73, 163);
+        height: 50px;
+    }
+
+    .thirdBlock {
+        width: 100%;
+        background: rgb(238, 50, 38);
+        height: 150px;
+    }
+
+    #main div:nth-last-child(-n+3) {
+        width: 48%;
+        height: 100px;
+    }
+
+    #main div.sixthBlock {
+        display: none;
+    }
+}

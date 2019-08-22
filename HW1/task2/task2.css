@@ -1,0 +1,33 @@
+body {
+    margin: 0px;
+}
+
+.mainBlock {
+    position: relative;
+    border: 7px solid black;
+    width: 400px;
+    height: 400px;
+    margin: auto;
+}
+
+.mainBlock div {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+}
+
+.redBlock {
+    background-color: rgb(254, 0, 0);
+}
+
+.blueBlock {
+    bottom: 0px;
+    right: 0px;
+    background-color: rgb(0, 0, 254);
+}
+
+.greenBlock {
+    top: 75px;
+    left: 75px;
+    background-color: rgb(0, 255, 1);
+}
