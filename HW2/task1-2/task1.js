@@ -16,7 +16,7 @@ function getName(){
     var name = prompt("Enter your name","Ivan");
     var check = parseInt(name.replace( /\D/g, '')) || 0;
     var newName="";
-    if(!check){
+    if(!(check==name)){
         for(var i=0; i<name.length;i++){
             if(name[i].toUpperCase()===name[i]){
                 newName += name[i].toLowerCase();
