@@ -82,13 +82,13 @@ var factoryWorker = new FactoryWorker("Gevorg", 19, 0);
 var enterpriseWorker = new EnterpriseWorker("Gleb", 33, 1234);
 
 
-worker.setAge(17);
+/*worker.setAge(17);
 factoryWorker.setAge(17);
 enterpriseWorker.setAge(15);
 console.log(worker.getAge());
 console.log(factoryWorker.getAge());
 console.log(factoryWorker);
-console.log(enterpriseWorker);
+console.log(enterpriseWorker);*/
 
 
 

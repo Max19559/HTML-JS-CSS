@@ -1,11 +1,18 @@
+  body{
+    background-image: url("img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
   table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    margin-top: 20px;
   }
 
   caption {
-    font-size: 40px;
+    font-size: 42px;
     font-weight: bold;
   }
 
@@ -18,6 +25,7 @@
   th {
     height: 30px;
     text-align: center;
+    font-size: 18px;
   }
 
   td {
@@ -27,6 +35,23 @@
   table td input {
     width: 100%;
     height: 30px;
+    cursor: pointer;
+  }
+
+  tr td:nth-child(6) input{
+    background: rgba(81, 255, 0, 0.5);
+  }
+
+  tr td:nth-child(6) input:hover{
+    background: rgba(81, 255, 0, 1);
+  }
+
+  tr td:nth-child(7) input{
+    background: rgba(255, 0, 0, 0.5);
+  }
+
+  tr td:nth-child(7) input:hover{
+    background: rgba(255, 0, 0, 1);
   }
 
   tr:nth-child(even) {

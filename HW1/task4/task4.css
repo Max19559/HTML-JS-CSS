@@ -98,6 +98,10 @@ body {
         height: 150px;
     }
 
+    .forthBlock {
+        background: rgb(35, 177, 77);
+    }
+
     #main div:nth-last-child(-n+3) {
         width: 48%;
         height: 100px;

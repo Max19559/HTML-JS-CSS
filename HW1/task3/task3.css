@@ -6,6 +6,7 @@ body {
 #main {
     position: relative;
     height: 1000px;
+    
 }
 
 header {
@@ -18,7 +19,7 @@ header {
     margin: auto;
     border-radius: 0 0 50% 50%;
     border: 2px solid black;
-    background-image: repeating-linear-gradient(45deg, red, green 10%, red 20%);
+    background: rgba(0, 255, 64, 0.3);
 }
 
 #sidebar {
@@ -46,6 +47,7 @@ footer {
     left: 5%;
     border-radius: 50% 50% 0 0;
     border: 2px solid black;
+    background: rgba(251, 255, 0, 0.3);
 }
 
 footer p {
@@ -61,7 +63,7 @@ section {
     height: 60%;
     border: 2px solid black;
     top: 20%;
-    box-shadow: 1px 1px 100px pink;
+    background: rgba(212, 0, 255, 0.199);
 }
 
 a {

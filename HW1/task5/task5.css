@@ -12,7 +12,7 @@ body {
 
 .container img {
     width: 20%;
-    height: 540px;
+    height: 50%;
     border: 2px solid rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
 }
@@ -25,16 +25,13 @@ body {
 
     div.container img {
         width: 25%;
-        height: 257px;
+        height: 25%;
         border: 2px solid rgba(0, 0, 0, 0.1);
         box-sizing: border-box;
     }
 
     div.container img:nth-last-child(-n+2) {
         width: 50%;
-        height: 514px;
+        height: 50%;
     }
-
-
-
 }
