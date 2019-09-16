@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="task5.css">
+    <script src="tabulator.js"></script>
+    <script type="text/javascript" src="/dpd.js"></script>
+    <script src="task5CRUD.js" defer></script>
+    
+</head>
+<body>
+    <section id="actions">         
+        <div class="container">             
+            <div class="lp-content">                                
+                    <div class="lp-tabs"> 
+ 
+                    <div data-tab-title="CREATE">                         
+                        <form id='createForm'>
+                            <div class="form-group">
+                                <label for="cName">Worker name</label>
+                                <input type="text" class="form-control" id="cName" aria-describedby="emailHelp"
+                                    placeholder="Enter worker name">
+                            </div>
+                            <div class="form-group">
+                                <label for="cAge">Age</label>
+                                <input type="number" min=18 class="form-control" id="cAge" placeholder="Enter worker age">
+                            </div>
+                            <div class="form-group">
+                                <label for="cCategory">Category</label>
+                                <input type="number" min=1 class="form-control" id="cCategory" placeholder="Enter worker category">
+                            </div>
+    
+                            <button type="submit" id='cButton' class="btn btn-primary">Submit</button>
+                        </form>                    
+                    </div> 
+ 
+                    <div data-tab-title="READ">                         
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Age</th>
+                                    <th scope="col">WorkerID</th>
+                                </tr>
+                            </thead>
+                            <tbody id='rTBody'>
+                                <!--  <tr>
+                                    <th scope="row">1</th>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                </tr> -->
+    
+                            </tbody>
+                        </table>                     
+                    </div> 
+ 
+                    <div data-tab-title="DELETE">                         
+                        <div class="card-body">
+                            <form id='deleteForm'>
+                                <div class="form-group">
+                                    <label for="dID">ID</label>
+                                    <input type="text" class="form-control" id="dID" placeholder="Enter ID">
+                                </div>
+                                <button type="submit" id='dButton' class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>                     
+                    </div> 
+ 
+                    <div data-tab-title="UPDATE">                         
+                        <div class="card-body">
+                            <form id='updateForm'>
+                                <div class="form-group">
+                                    <label for="uid">ID</label>
+                                    <select id="uid" class="form-control">
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="uName">Worker name</label>
+                                    <input type="text" class="form-control" id="uName" placeholder="Enter worker name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="uAge">Age</label>
+                                    <input type="number" min=18 class="form-control" id="uAge" placeholder="Enter worker age">
+                                </div>
+                                <div class="form-group">
+                                    <label for="uCategory">Category</label>
+                                    <input type="number" min=1 class="form-control" id="uCategory" placeholder="Enter worker category">
+                                </div>
+                                        
+                                <button type="submit" id='ubutton' class="btn btn-primary">Submit</button>
+                              </form>
+                        </div>                     
+                    </div> 
+                    
+                    </div>             
+                </div>            
+            </div>     
+        </section>
+</body>
+</html>
