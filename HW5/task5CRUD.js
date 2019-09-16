@@ -97,7 +97,7 @@ $(document).ready(function() {
 
 
             $("#uid").change( function(){
-                dpd.worker.get($(this).val(), function(worker){
+                dpd.worker1.get($(this).val(), function(worker){
                     $('#uName').val(worker.name);
                     $('#uAge').val(worker.age);
                     $('#uCategory').val(worker.category);
